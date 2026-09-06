@@ -22,4 +22,4 @@ export async function getAuthenticatedUser(context) {
     console.log('AUTH SESSION RESPONSE:', JSON.stringify(data))
     
     return data?.user ?? null
-
+  }
