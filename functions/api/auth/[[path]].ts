@@ -32,10 +32,38 @@ export const onRequest = async (context: {
       cookieSecret: env.NEON_AUTH_COOKIE_SECRET,
     })
 
-    console.log('NEON AUTH RESPONSE:', response.status)
-console.log('NEON AUTH RESPONSE BODY:', await response.clone().text())
+    const responseBody = await response.clone().text()
+const parsedBody = (() => {
+  try {
+    return JSON.parse(responseBody)
+  } catch {
+    return null
+  }
+})()
 
-    return response
+console.log('NEON AUTH RESPONSE:', response.status)
+console.log('NEON AUTH RESPONSE BODY:', responseBody)
+
+const debugHeaders = new Headers(response.headers)
+debugHeaders.set(
+  'X-Debug-Cookie-Present',
+  request.headers.has('cookie') ? 'yes' : 'no',
+)
+debugHeaders.set(
+  'X-Debug-Has-User',
+  parsedBody?.user ? 'yes' : 'no',
+)
+debugHeaders.set(
+  'X-Debug-Has-Session',
+  parsedBody?.session ? 'yes' : 'no',
+)
+
+return new Response(response.body, {
+  status: response.status,
+  statusText: response.statusText,
+  headers: debugHeaders,
+})
+
   } catch (error) {
     console.error('NEON AUTH ERROR:', error)
 
