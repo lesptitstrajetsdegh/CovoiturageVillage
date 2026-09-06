@@ -2,7 +2,7 @@
 import { BetterAuthReactAdapter } from '@neondatabase/auth/react/adapters'
 
 export const auth = createAuthClient(
-  '/api/auth',
+  import.meta.env.VITE_NEON_AUTH_URL,
   {
     adapter: BetterAuthReactAdapter(),
   },
