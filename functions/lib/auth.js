@@ -5,14 +5,13 @@ export async function getAuthenticatedUser(context) {
     return null
   }
 
-  const response = await fetch(
-    `${context.env.NEON_AUTH_URL}/get-session`,
-    {
-      headers: {
-        cookie,
-      },
-    },
-  )
+    const url = new URL('/api/auth/get-session', context.request.url)
+
+      const response = await fetch(url, {
+        headers: {
+          cookie,
+        },
+      })
 
   if (!response.ok) {
     return null
