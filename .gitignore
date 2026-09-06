@@ -25,3 +25,10 @@ dist-ssr
 
 # Cloudflare Wrangler
 .wrangler/
+.env
+
+.dev.vars
+
+# Fichiers locaux / générés
+.neon
+_worker.bundle

@@ -1,10 +1,10 @@
 # Politique de confidentialité — Les P'tits trajets de Grand-Hallet
 
-Les P'tits trajets de Grand-Hallet est une initiative bénévole locale, créée et gérée par [Prénom NOM].
+Les P'tits trajets de Grand-Hallet est une initiative bénévole locale, créée et gérée par Céline Degrave.
 
 ## Responsable du traitement
 
-[Prénom NOM]
+Céline Degrave
 
 Adresse e-mail de contact : lesptitstrajetsdegh (at) gmail.com
 
@@ -12,17 +12,17 @@ Adresse e-mail de contact : lesptitstrajetsdegh (at) gmail.com
 
 Les données sont utilisées uniquement pour les finalités suivantes :
 
-| Traitement | Données concernées | Base juridique |
-|---|---|---|
-| Création et gestion du compte | prénom, nom complet, adresse, e-mail, téléphone, données de compte | article 6.1.b RGPD |
-| Gestion des trajets | données relatives aux trajets | article 6.1.b RGPD |
-| Gestion des lieux nécessaires au service | données du lieu et demandeur | article 6.1.b RGPD |
-| Vérification de l'appartenance au village | adresse, identité, statut de vérification | article 6.1.f RGPD |
-| Modification d'adresse | ancienne adresse validée, nouvelle adresse, statut | article 6.1.f RGPD |
-| Affichage des coordonnées après clic | e-mail, téléphone | article 6.1.f RGPD |
-| Journal administratif | identité, action, date, décision | article 6.1.f RGPD |
-| Notifications internes, rattachées à la gestion du compte / administration | destinataire, type, titre, message, date de création, statut lu/non lu, référence éventuelle | article 6.1.b et/ou 6.1.f RGPD selon la notification |
-| Sécurité et prévention des abus | journaux techniques nécessaires | article 6.1.f RGPD |
+|Traitement|Données concernées|Base juridique|
+|-|-|-|
+|Création et gestion du compte|prénom, nom complet, adresse, e-mail, téléphone, données de compte|article 6.1.b RGPD|
+|Gestion des trajets|données relatives aux trajets|article 6.1.b RGPD|
+|Gestion des lieux nécessaires au service|données du lieu et demandeur|article 6.1.b RGPD|
+|Vérification de l'appartenance au village|adresse, identité, statut de vérification|article 6.1.f RGPD|
+|Modification d'adresse|ancienne adresse validée, nouvelle adresse, statut|article 6.1.f RGPD|
+|Affichage des coordonnées après clic|e-mail, téléphone|article 6.1.f RGPD|
+|Journal administratif|identité, action, date, décision|article 6.1.f RGPD|
+|Notifications internes, rattachées à la gestion du compte / administration|destinataire, type, titre, message, date de création, statut lu/non lu, référence éventuelle|article 6.1.b et/ou 6.1.f RGPD selon la notification|
+|Sécurité et prévention des abus|journaux techniques nécessaires|article 6.1.f RGPD|
 
 ## Vérification du village et modification d'adresse
 
@@ -52,23 +52,32 @@ Des mesures techniques et organisationnelles adaptées sont mises en œuvre pour
 
 ## Durées de conservation
 
-- Trajets d'une année scolaire terminée : jusqu'à l'ouverture de l'année scolaire N+2.
-- Compte désactivé : 1 an après désactivation.
-- Compte refusé : 3 mois après le refus.
-- Nouvelle adresse refusée ou à corriger : jusqu'à résolution puis suppression de la donnée provisoire.
-- Journal administratif : 1 an.
-- Notifications internes : 1 an à compter de la création.
+* Année scolaire archivée : suppression 1 an après sa date d'archivage.
+* Trajets archivés : suppression 1 an après leur date d'archivage.
+* Périodes de stage archivées : suppression 1 an après leur date d'archivage.
+* Famille archivée : suppression 1 an après sa date d'archivage.
+* Lieu archivé : suppression 1 an après sa date d'archivage.
+* Notifications internes : suppression 1 an après leur date de création.
 
 Les données d'un compte actif et les données nécessaires au fonctionnement sont conservées pendant la durée utile au service, sous réserve des durées ci-dessus.
 
-## Prestataires et éventuels transferts
+## Prestataires et éventuels transferts internationaux
 
-Les prestataires retenus sont notamment Cloudflare pour l'hébergement et la couche serveur, et Neon pour PostgreSQL et l'authentification Neon Auth / Better Auth. Les informations de configuration contractuelle, les rôles exacts de chaque prestataire et les éventuels transferts hors de l'Espace économique européen restent à vérifier : [informations contractuelles et transferts à compléter]. Aucun service d'e-mail transactionnel n'est utilisé.
+La plateforme utilise notamment Cloudflare pour l'hébergement et la couche serveur, ainsi que Neon pour la base de données PostgreSQL et l'authentification Neon Auth / Better Auth. Ces prestataires disposent de dispositions contractuelles relatives à la protection des données.
+
+
+
+Certains traitements ou accès techniques peuvent avoir lieu en dehors de l'Espace économique européen. Lorsque cela est nécessaire, les transferts internationaux sont encadrés par les mécanismes prévus par le RGPD, notamment une décision d'adéquation telle que le Data Privacy Framework lorsqu'elle est applicable, ou les clauses contractuelles types de la Commission européenne, assorties des garanties complémentaires nécessaires.
+
+
+
+Aucun service d'e-mail transactionnel ou automatique n'est utilisé par la plateforme.
 
 ## Vos droits
 
-Vous pouvez demander l'accès à vos données, leur rectification, leur effacement, la limitation ou l'opposition au traitement lorsque les conditions légales sont réunies, ainsi que la portabilité lorsque celle-ci est applicable. Vous pouvez exercer ces droits en écrivant à [adresse e-mail dédiée au projet]. Vous pouvez également introduire une réclamation auprès de l'Autorité de protection des données (APD) : [https://www.autoriteprotectiondonnees.be](https://www.autoriteprotectiondonnees.be).
+Vous pouvez demander l'accès à vos données, leur rectification, leur effacement, la limitation ou l'opposition au traitement lorsque les conditions légales sont réunies, ainsi que la portabilité lorsque celle-ci est applicable. Vous pouvez exercer ces droits en écrivant à lesptitstrajetsdegh (at) gmail.com. Vous pouvez également introduire une réclamation auprès de l'Autorité de protection des données (APD) : [https://www.autoriteprotectiondonnees.be](https://www.autoriteprotectiondonnees.be).
 
 ## Mise à jour
 
 Cette politique peut être mise à jour pour refléter l'évolution du service, des prestataires ou des règles applicables. La version en vigueur est celle publiée sur la plateforme.
+

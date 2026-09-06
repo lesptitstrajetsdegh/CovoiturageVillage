@@ -1,10 +1,10 @@
 # Mentions légales — Les P'tits trajets de Grand-Hallet
 
-Les P'tits trajets de Grand-Hallet est une initiative bénévole locale, créée et gérée par [Prénom NOM].
+Les P'tits trajets de Grand-Hallet est une initiative bénévole locale, créée et gérée par Céline Degrave.
 
 ## Responsable de la plateforme
 
-[Prénom NOM]
+Céline Degrave
 
 E-mail : lesptitstrajetsdegh (at) gmail.com
 
@@ -12,9 +12,9 @@ Remplacez « (at) » par « @ » pour nous écrire.
 
 ## Hébergement et prestataires techniques
 
-- Hébergement et couche serveur : Cloudflare Pages Free et Cloudflare Pages Functions Free.
-- Base de données et authentification : Neon PostgreSQL Free et Neon Auth / Better Auth.
-- Informations contractuelles complémentaires : [à compléter après vérification].
+* Hébergement et couche serveur : Cloudflare Pages Free et Cloudflare Pages Functions Free.
+* Base de données et authentification : Neon PostgreSQL Free et Neon Auth / Better Auth.
+* Les traitements de données réalisés par les prestataires techniques sont encadrés par les dispositions contractuelles applicables en matière de protection des données. Certains traitements ou accès techniques peuvent avoir lieu en dehors de l'Espace économique européen, dans le respect des mécanismes de transfert prévus par le RGPD.
 
 ## Rôle et limites de la plateforme
 
@@ -24,6 +24,7 @@ Le service est fourni à titre bénévole. Sa disponibilité peut être interrom
 
 ## Documents utiles
 
-- [Règles de fonctionnement](REGLES_FONCTIONNEMENT.md)
-- [Conditions d'utilisation](CONDITIONS_UTILISATION.md)
-- [Politique de confidentialité](POLITIQUE_CONFIDENTIALITE.md)
+* [Règles de fonctionnement](REGLES_FONCTIONNEMENT.md)
+* [Conditions d'utilisation](CONDITIONS_UTILISATION.md)
+* [Politique de confidentialité](POLITIQUE_CONFIDENTIALITE.md)
+

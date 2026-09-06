@@ -109,3 +109,606 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+select option {
+  color: #08060d;
+  background: #fff;
+}
+
+button {
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 48px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+main > section {
+  margin-top: 32px;
+}
+
+main > section:first-of-type {
+  margin-top: 0;
+}
+
+main form {
+  margin-top: 16px;
+}
+
+main form p,
+main form label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+main input,
+main select {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+main input[type="checkbox"] {
+  width: auto;
+  max-width: none;
+  margin-left: 16px;
+}
+
+main button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+main h1 {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+main h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+main h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+main ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+main li {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--code-bg);
+}
+
+main button {
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 9px 14px;
+}
+
+main button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+
+form p.trip-field {
+  margin: 0 0 28px;
+}
+
+form p.trip-field label {
+  display: block;
+}
+
+form p.trip-field .trip-field-title {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+form p.trip-field small {
+  display: block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+form p.trip-field small strong {
+  text-decoration: none;
+}
+
+form p.trip-field select,
+form p.trip-field input {
+  margin-top: 0;
+}
+
+form p label {
+  font-weight: normal;
+}
+
+form p label .trip-field-title {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.home-page {
+  text-align: center;
+}
+
+.home-page h1 {
+  margin-bottom: 40px;
+}
+
+.home-page section {
+  margin-top: 40px;
+}
+
+.home-page p {
+  max-width: 750px;
+  margin: 0 auto 16px;
+}
+
+.home-intro {
+  font-size: 19px;
+}
+
+.home-intro p:first-child {
+  margin-bottom: 24px;
+}
+
+.home-how {
+  padding-top: 8px;
+}
+
+.home-how h2 {
+  margin-bottom: 24px;
+}
+
+.home-actions {
+  margin-top: 48px !important;
+}
+
+.home-actions h2 {
+  margin-bottom: 24px;
+}
+
+.home-actions a {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-actions a:hover {
+  text-decoration: underline;
+}
+
+.app-navigation {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.app-navigation > a:first-child {
+  margin-right: auto;
+}
+
+.app-navigation a {
+  color: var(--text-h);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.app-navigation a:hover {
+  text-decoration: underline;
+}
+
+.app-navigation-user {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.app-navigation button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-h);
+  font: inherit;
+  font-weight: 600;
+}
+
+.app-navigation button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .app-navigation {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .app-navigation > a:first-child {
+    margin-right: auto;
+  }
+
+  .app-navigation-user {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.home-step {
+  max-width: 750px;
+  margin: 0 auto 28px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--code-bg);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.home-step:last-child {
+  margin-bottom: 0;
+}
+
+.home-step h3 {
+  margin: 0 0 8px;
+  color: var(--text-h);
+  font-size: 20px;
+}
+
+.home-step p {
+  margin: 0;
+}
+
+.home-note {
+  max-width: 750px;
+  margin: 56px auto 0;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--code-bg);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.home-note h2 {
+  margin: 0 0 16px;
+  color: var(--text-h);
+  font-size: 20px;
+}
+
+.home-note p {
+  margin: 0 0 12px;
+}
+
+.home-note p:last-child {
+  margin-bottom: 0;
+}
+
+.home-connected {
+  margin-top: 48px !important;
+}
+
+.home-image {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  margin: 0 auto 40px;
+  border-radius: 12px;
+}
+
+.family-status {
+  margin-bottom: 32px;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.trip-toggle {
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-size: 0.9rem;
+}
+
+.trip-action {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.trip-info {
+  display: block;
+}
+
+.trip-info strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.trip-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-bottom: 6px;
+}
+
+.trip-participation {
+  margin-top: 4px;
+}
+
+.trip-info strong {
+  text-transform: capitalize;
+}
+
+.trip-info span {
+  font-size: 0.95rem;
+}
+
+.trip-item {
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.trip-item .trip-info {
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-bottom: 10px;
+}
+
+.trip-separator {
+  font-weight: bold;
+}
+
+.trip-search .trip-field > label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.trip-search .trip-field input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.trip-search hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 2px solid #ccc;
+}
+
+form p.trip-field label:has(select) {
+  display: flex;
+  align-items: center;
+}
+
+form p.trip-field label:has(select) .trip-field-title {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+form p.trip-field label:has(select) select {
+  margin-left: 0;
+  width: auto;
+}
+
+.trip-form-title {
+  margin: 24px 0 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.account-edit-button {
+  margin-top: 12px;
+}
+
+.account-address-note {
+  margin-left: 8ch;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.account-address-note p {
+  margin-bottom: 10px;
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 45px;
+  box-sizing: border-box;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  padding: 4px;
+  margin: 0;
+  width: auto;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.trip-search-separator {
+  margin: 32px 0 24px;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.trip-search-results-title {
+  margin: 0 0 20px;
+  font-size: 1.15rem;
+}
+
+/* Pages d'information et documents juridiques */
+.legal-page {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.legal-page h1 {
+  line-height: 1.15;
+  margin-bottom: 40px;
+}
+
+.legal-page h2 {
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+.legal-page p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.legal-page ul {
+  padding-left: 24px;
+  list-style: disc;
+  margin: 0 0 20px;
+}
+
+.legal-page li {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  margin-top: 48px;
+  padding: 28px 24px 32px;
+  border-top: 1px solid var(--border);
+}
+
+.app-footer-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.app-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.app-footer-links span {
+  font-weight: 600;
+}
+
+.app-footer-contact {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.app-footer-note {
+  font-size: 0.85em;
+  font-style: italic;
+  margin: 0;
+}
+
+.admin-family-active {
+  background-color: #f2f8f2 !important;
+  border: 1px solid #b8d8b8 !important;
+}
+
+.admin-family-disabled {
+  background-color: #f3f3f3 !important;
+  border: 1px solid #cccccc !important;
+}
+
+.admin-family-group h3 {
+  color: #08060d !important;
+}
+
+.account-success-message {
+  margin-bottom: 24px;
+  padding: 14px 16px;
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  background: var(--accent-bg);
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.signup-rules {
+  margin-bottom: 20px;
+}
+
+.signup-acceptance-hint {
+  font-size: 0.85em;
+  font-style: italic;
+  margin-top: 16px;
+}
+
+form p.trip-field textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 80px;
+  padding: 8px 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: inherit;
+  color: inherit;
+}
