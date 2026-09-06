@@ -17,8 +17,9 @@ export async function getAuthenticatedUser(context) {
     return null
   }
 
-  const data = await response.json()
-
-  return data?.user ?? null
-}
+    const data = await response.json()
+    
+    console.log('AUTH SESSION RESPONSE:', JSON.stringify(data))
+    
+    return data?.user ?? null
 
