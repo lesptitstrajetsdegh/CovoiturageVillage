@@ -469,7 +469,7 @@ form p label .trip-field-title {
 }
 
 .trip-info strong {
-  display: block;
+  display: inline;
   margin-bottom: 6px;
 }
 
