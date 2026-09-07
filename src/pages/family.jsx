@@ -519,6 +519,13 @@ async function handleShowTripContact(tripId) {
           ? 'École'
           : 'Stage'}
 
+      {trip.private_note && (
+        <>
+          {' — '}
+          <em>{trip.private_note}</em>
+        </>
+      )}
+
       {trip.status === 'paused' && (
         <>
           {' — '}
