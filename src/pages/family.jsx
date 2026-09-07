@@ -512,6 +512,12 @@ async function handleShowTripContact(tripId) {
     )}
   </strong>
 
+            {trip.private_note && (
+              <div>
+                {trip.private_note}
+              </div>
+            )}
+
           <div className="trip-details">
             <span>{trip.location_name}</span>
             <span className="trip-separator">•</span>
@@ -1511,7 +1517,7 @@ function TripForm({
             Repère personnel
           </span>
           <small>
-            Facultatif — visible uniquement par vous.
+            Facultatif — visible uniquement par vous. Ex. : Piano Jules
           </small>
           <input
             type="text"
