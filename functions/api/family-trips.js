@@ -46,7 +46,16 @@ export async function onRequest(context) {
         AND sy.status = 'active'
       ORDER BY
         t.category,
-        t.weekday,
+        CASE t.weekday
+          WHEN 'monday' THEN 1
+          WHEN 'tuesday' THEN 2
+          WHEN 'wednesday' THEN 3
+          WHEN 'thursday' THEN 4
+          WHEN 'friday' THEN 5
+          WHEN 'saturday' THEN 6
+          WHEN 'sunday' THEN 7
+          ELSE 8
+        END,
         t.time_on_site,
         t.direction,
         t.trip_id
