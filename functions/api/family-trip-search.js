@@ -138,7 +138,17 @@ WHERE
   )
 
       ORDER BY
-        t.weekday NULLS LAST,
+        t.category,
+        CASE t.weekday
+          WHEN 'monday' THEN 1
+          WHEN 'tuesday' THEN 2
+          WHEN 'wednesday' THEN 3
+          WHEN 'thursday' THEN 4
+          WHEN 'friday' THEN 5
+          WHEN 'saturday' THEN 6
+          WHEN 'sunday' THEN 7
+          ELSE 8
+        END,
         t.time_on_site,
         t.direction,
         l.name,

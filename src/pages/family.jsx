@@ -512,11 +512,22 @@ async function handleShowTripContact(tripId) {
     )}
   </strong>
 
-            {trip.private_note && (
-              <div>
-                {trip.private_note}
-              </div>
-            )}
+    <strong>
+      {trip.category === 'activity'
+        ? 'Activité'
+        : trip.category === 'school'
+          ? 'École'
+          : 'Stage'}
+
+      {trip.status === 'paused' && (
+        <>
+          {' — '}
+          <span className="trip-paused">
+            Trajet en pause
+          </span>
+        </>
+      )}
+    </strong>
 
           <div className="trip-details">
             <span>{trip.location_name}</span>
