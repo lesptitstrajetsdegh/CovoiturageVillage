@@ -36,8 +36,6 @@ export async function onRequest(context) {
         f.parent_first_name,
         f.parent_last_name,
         f.children_last_name,
-        f.address_street,
-        f.address_postal_village,
         f.phone
       FROM trips t
       INNER JOIN families f
