@@ -495,30 +495,29 @@ async function handleShowTripContact(tripId) {
       <li key={trip.trip_id} className="trip-item">
 
 <div className="trip-info">
-  <strong>
-    {trip.category === 'activity'
-      ? 'Activité'
-      : trip.category === 'school'
-        ? 'École'
-        : 'Stage'}
-  
-      {trip.private_note && (
-        <>
-          {' — '}
-          <em>{trip.private_note}</em>
-        </>
-      )}
+<strong>
+  {trip.category === 'activity'
+    ? 'Activité'
+    : trip.category === 'school'
+      ? 'École'
+      : 'Stage'}
+</strong>
 
-      {trip.status === 'paused' && (
-        <>
-          {' — '}
-          <span className="trip-paused">
-            Trajet en pause
-          </span>
-        </>
-      )}
+{trip.private_note && (
+  <>
+    {' — '}
+    <em>{trip.private_note}</em>
+  </>
+)}
+
+{trip.status === 'paused' && (
+  <>
+    {' — '}
+    <strong className="trip-paused">
+      Trajet en pause
     </strong>
-
+  </>
+)}
           <div className="trip-details">
             <span>{trip.location_name}</span>
             <span className="trip-separator">•</span>
