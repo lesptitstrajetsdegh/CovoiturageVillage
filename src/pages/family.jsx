@@ -1067,13 +1067,7 @@ Vous pourrez le réactiver plus tard."
             <p>
               Enfants : {tripContacts[trip.trip_id].children_last_name}
             </p>
-        
-            <p>
-              Adresse : {tripContacts[trip.trip_id].address_street}
-              <br />
-              {tripContacts[trip.trip_id].address_postal_village}
-            </p>
-        
+               
             <p>
               Téléphone : {tripContacts[trip.trip_id].phone}
             </p>
