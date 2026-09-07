@@ -30,6 +30,7 @@ export async function onRequest(context) {
         t.car_trip_type,
         t.participation_type,
         t.additional_info,
+        t.private_note,
         t.status,
         t.created_at,
         t.updated_at

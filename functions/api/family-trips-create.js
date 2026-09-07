@@ -47,6 +47,32 @@ const additionalInfo =
     ? body.additional_info.trim()
     : null
 
+if (
+  body.private_note !== undefined &&
+  body.private_note !== null &&
+  typeof body.private_note !== 'string'
+) {
+  return Response.json(
+    { error: 'Repère personnel invalide.' },
+    { status: 400 },
+  )
+}
+
+if (
+  typeof body.private_note === 'string' &&
+  body.private_note.length > 100
+) {
+  return Response.json(
+    { error: 'Le repère personnel ne peut pas dépasser 100 caractères.' },
+    { status: 400 },
+  )
+}
+
+const privateNote =
+  typeof body.private_note === 'string'
+    ? body.private_note.trim()
+    : null
+
     const sql = neon(context.env.DATABASE_URL)
 
     const familyResult = await sql`
@@ -217,6 +243,7 @@ const additionalInfo =
         car_trip_type,
         participation_type,
         additional_info,
+        private_note,
         status
       )
       VALUES (
@@ -231,6 +258,7 @@ const additionalInfo =
         ${carTripType},
         ${body.participation_type},
         ${additionalInfo},
+        ${privateNote},
         'active'
       )
       RETURNING
@@ -246,6 +274,7 @@ const additionalInfo =
         car_trip_type,
         participation_type,
         additional_info,
+        private_note,
         status,
         created_at,
         updated_at

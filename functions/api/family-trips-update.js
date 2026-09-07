@@ -46,7 +46,7 @@ export async function onRequest(context) {
         direction,
         car_trip_type,
         participation_type,
-        additional_info
+        additional_info,
         status
       FROM trips
       WHERE trip_id = ${tripId}
@@ -103,6 +103,31 @@ export async function onRequest(context) {
       body.additional_info !== undefined
         ? body.additional_info
         : current.additional_info
+
+    const privateNote =
+      body.private_note !== undefined
+        ? body.private_note
+        : current.private_note
+
+    if (
+      privateNote !== null &&
+      typeof privateNote !== 'string'
+    ) {
+      return Response.json(
+        { error: 'Repère personnel invalide.' },
+        { status: 400 },
+      )
+    }
+
+    if (
+      typeof privateNote === 'string' &&
+      privateNote.length > 100
+    ) {
+      return Response.json(
+        { error: 'Le repère personnel ne peut pas dépasser 100 caractères.' },
+        { status: 400 },
+      )
+    }
 
     if (
       additionalInfo !== null &&
@@ -271,6 +296,11 @@ export async function onRequest(context) {
             ? additionalInfo.trim()
             : additionalInfo
         },
+        private_note = ${
+          typeof privateNote === 'string'
+            ? privateNote.trim()
+            : privateNote
+        },
         updated_at = NOW()
       WHERE trip_id = ${tripId}
         AND family_id = (
@@ -291,6 +321,7 @@ export async function onRequest(context) {
         car_trip_type,
         participation_type,
         additional_info,
+        private_note,
         status,
         created_at,
         updated_at

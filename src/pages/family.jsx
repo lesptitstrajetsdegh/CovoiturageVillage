@@ -78,6 +78,7 @@ export function Family() {
     car_trip_type: 'simple',
     participation_type: 'need_ride',
     additional_info: '',
+    private_note: '',
   })
 
   async function loadFamily() {
@@ -599,6 +600,7 @@ async function handleShowTripContact(tripId) {
                car_trip_type: trip.car_trip_type ?? 'simple',
                participation_type: trip.participation_type,
                additional_info: trip.additional_info ?? '',
+               private_note: trip.private_note ?? '',
              })
             }}
 
@@ -707,7 +709,8 @@ Vous pourrez le réactiver plus tard."
               direction: 'outbound',
               car_trip_type: 'simple',
               participation_type: 'need_ride',
-              additional_info: '',          
+              additional_info: '',
+              private_note: '',          
             })
           }}
 
@@ -1503,6 +1506,21 @@ function TripForm({
 
       <p className="trip-field">
         <label>
+        <p>
+          <span className="trip-field-title">
+            Repère personnel
+          </span>
+          <small>
+            Facultatif — visible uniquement par vous.
+          </small>
+          <input
+            type="text"
+            name="private_note"
+            value={tripForm.private_note}
+            onChange={handleTripChange}
+            maxLength={100}
+          />
+        </p>
           <span className="trip-field-title">
             Informations complémentaires
           </span>
