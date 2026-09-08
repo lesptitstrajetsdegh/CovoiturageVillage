@@ -71,21 +71,6 @@ export async function onRequest(context) {
       )
       VALUES (
         ${result[0].family_id},
-        'account_unsuspended',
-        'Votre compte a été réactivé. Vous avez à nouveau accès aux fonctionnalités de la plateforme et à vos trajets.',
-        NOW() + INTERVAL '1 year'
-      )
-    `
-
-    await sql`
-      INSERT INTO notifications (
-        family_id,
-        type,
-        content,
-        expires_at
-      )
-      VALUES (
-        ${result[0].family_id},
         'account_suspended',
         'Votre compte a été suspendu. Vous n’avez temporairement plus accès aux fonctionnalités de la plateforme. Pour en savoir plus, veuillez consulter les règles de fonctionnement et les conditions générales, ou contacter l’administratrice.',
         NOW() + INTERVAL '1 year'

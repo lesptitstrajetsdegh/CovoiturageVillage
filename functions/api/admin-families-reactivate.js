@@ -63,6 +63,21 @@ export async function onRequest(context) {
       )
     }
 
+    await sql`
+      INSERT INTO notifications (
+        family_id,
+        type,
+        content,
+        expires_at
+      )
+      VALUES (
+        ${result[0].family_id},
+        'account_unsuspended',
+        'Votre compte a été réactivé. Vous avez à nouveau accès aux fonctionnalités de la plateforme et à vos trajets.',
+        NOW() + INTERVAL '1 year'
+      )
+    `
+
     return Response.json({
       family: result[0],
     })
