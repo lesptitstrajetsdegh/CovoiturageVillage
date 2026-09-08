@@ -14,6 +14,33 @@ export async function onRequest(context) {
   try {
     const sql = neon(context.env.DATABASE_URL)
 
+    const familyResult = await sql`
+      SELECT family_id, status
+      FROM families
+      WHERE auth_user_id = ${user.id}
+    `
+
+    if (familyResult.length === 0) {
+      return Response.json(
+        { error: 'Famille introuvable.' },
+        { status: 403 },
+      )
+    }
+
+    if (familyResult[0].status === 'suspended') {
+      return Response.json(
+        { error: 'Compte suspendu.' },
+        { status: 403 },
+      )
+    }
+
+    if (familyResult[0].status !== 'active') {
+      return Response.json(
+        { error: 'Compte non actif.' },
+        { status: 403 },
+      )
+    }
+
     const result = await sql`
       SELECT
         t.trip_id,

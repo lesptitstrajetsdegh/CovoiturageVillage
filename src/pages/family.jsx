@@ -464,6 +464,28 @@ async function handleShowTripContact(tripId) {
     )
   }
 
+  if (family.status === 'suspended') {
+    return (
+      <main>
+        <h1 className="page-title">Mes trajets</h1>
+
+        <p>
+          <strong>Votre compte a été suspendu.</strong>
+        </p>
+
+        <p>
+          En conséquence, vous n’avez actuellement plus accès aux
+          fonctionnalités de la plateforme. La page <strong>Mon compte</strong> reste accessible.
+        </p>
+
+        <p>
+          Pour en savoir plus, veuillez consulter les règles de fonctionnement
+          et les conditions générales, ou contacter l’administratrice.
+        </p>
+      </main>
+    )
+  }
+
   return (
     <main>
 
@@ -1096,13 +1118,24 @@ Vous pourrez le réactiver plus tard."
         </section>
       )}
 
-      {family.status !== 'active' && (
-          <p>
-            Votre inscription est en attente de validation par l'administrateur.
-            Vous pourrez ajouter ou modifier vos trajets une fois votre inscription validée.
-          </p>
-
-       )}
+      {family.status === 'pending' && (
+        <p>
+          Votre inscription est en attente de validation par
+          l'administrateur.
+          Vous pourrez ajouter ou modifier vos trajets une fois votre
+          inscription validée.
+        </p>
+      )}
+      
+      {family.status === 'suspended' && (
+        <p>
+          Votre compte a été suspendu.
+          En conséquence, vous n’avez actuellement plus accès aux
+          fonctionnalités de la plateforme. La page <strong>Mon compte</strong> reste accessible.
+          Pour en savoir plus, veuillez consulter les règles de fonctionnement
+          et les conditions générales, ou contacter l’administratrice.
+        </p>
+      )}
 
       {tripSaved && (
         <p>Le trajet a bien été enregistré.</p>
