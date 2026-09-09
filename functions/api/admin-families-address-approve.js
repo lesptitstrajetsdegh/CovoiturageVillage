@@ -6,14 +6,14 @@ export async function onRequest(context) {
 
   if (!admin) {
     return Response.json(
-      { error: 'Accès interdit' },
+      { error: 'AccÃ¨s interdit' },
       { status: 403 },
     )
   }
 
   if (context.request.method !== 'POST') {
     return Response.json(
-      { error: 'Méthode non autorisée' },
+      { error: 'MÃ©thode non autorisÃ©e' },
       { status: 405 },
     )
   }
@@ -62,7 +62,7 @@ export async function onRequest(context) {
 
     if (result.length === 0) {
       return Response.json(
-        { error: 'Aucune demande d’adresse en attente pour cette famille.' },
+        { error: 'Aucune demande dâ€™adresse en attente pour cette famille.' },
         { status: 404 },
       )
     }
@@ -77,7 +77,7 @@ await sql`
   VALUES (
     ${result[0].family_id},
     'address_approved',
-    'Votre demande de changement d’adresse a été acceptée par l’administrateur.',
+    'Votre demande de changement dâ€™adresse a Ã©tÃ© acceptÃ©e par lâ€™administrateur.',
     NOW() + INTERVAL '1 year'
   )
 `
