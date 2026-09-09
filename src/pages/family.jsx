@@ -464,7 +464,7 @@ async function handleShowTripContact(tripId) {
     )
   }
 
-  if (family.status === 'suspended') {
+  if (family.status === 'suspended' || family.status === 'disabled') {
     return (
       <main>
         <h1 className="page-title">Mes trajets</h1>
@@ -1032,9 +1032,9 @@ Vous pourrez le réactiver plus tard."
         </strong>
 
         <div>
-          {trip.weekday && `${getWeekdayLabel(trip.weekday)} — `}
-          {trip.period_label && `${trip.period_label} — `}
-          {trip.time_on_site.slice(0, 5)} —{' '}
+          {trip.weekday && `${getWeekdayLabel(trip.weekday)} • `}
+          {trip.period_label && `${trip.period_label} • `}
+          {trip.time_on_site.slice(0, 5)} •{' '}
           {getDirectionLabel(trip.direction)}
         </div>
 
@@ -1127,16 +1127,6 @@ Vous pourrez le réactiver plus tard."
         </p>
       )}
       
-      {family.status === 'suspended' && (
-        <p>
-          Votre compte a été suspendu.
-          En conséquence, vous n’avez actuellement plus accès aux
-          fonctionnalités de la plateforme. La page <strong>Mon compte</strong> reste accessible.
-          Pour en savoir plus, veuillez consulter les règles de fonctionnement
-          et les conditions générales, ou contacter l’administratrice.
-        </p>
-      )}
-
       {tripSaved && (
         <p>Le trajet a bien été enregistré.</p>
       )}
