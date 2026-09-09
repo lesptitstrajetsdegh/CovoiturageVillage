@@ -79,6 +79,11 @@ export function Navigation() {
     loadAdminStatus()
     loadAdminUnreadCount()
 
+    const interval = setInterval(() => {
+      loadUnreadCount()
+      loadAdminUnreadCount()
+    }, 10000)
+
     window.addEventListener(
       'notifications-updated',
       loadUnreadCount,
@@ -90,6 +95,8 @@ export function Navigation() {
     )
 
     return () => {
+      clearInterval(interval)
+
       window.removeEventListener(
         'notifications-updated',
         loadUnreadCount,

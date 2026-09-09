@@ -67,6 +67,21 @@ export async function onRequest(context) {
       )
     }
 
+await sql`
+  INSERT INTO notifications (
+    family_id,
+    type,
+    content,
+    expires_at
+  )
+  VALUES (
+    ${result[0].family_id},
+    'address_approved',
+    'Votre demande de changement d’adresse a été acceptée par l’administrateur.',
+    NOW() + INTERVAL '1 year'
+  )
+`
+
     return Response.json({
       family: result[0],
     })
