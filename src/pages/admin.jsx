@@ -88,6 +88,12 @@ export function Admin() {
     }
 
     loadAdmin()
+
+    const interval = setInterval(() => {
+      loadAdminData()
+    }, 10000)
+
+    return () => clearInterval(interval)
   }, [])
 
   async function handleArchiveSchoolYear(schoolYearId) {
