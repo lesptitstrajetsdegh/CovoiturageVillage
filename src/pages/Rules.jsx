@@ -31,8 +31,8 @@ export default function Rules() {
         </li>
         <li>
           Utiliser la plateforme uniquement dans son objectif : l'entraide
-          entre parents de Grand-Hallet pour les trajets liés aux activités
-          extrascolaires et aux stages des enfants.
+          entre parents de Grand-Hallet pour les trajets liés à l'école, aux
+          activités extrascolaires et aux stages des enfants.
         </li>
         <li>
           Régler directement entre parents les modalités de chaque trajet,

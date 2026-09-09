@@ -29,8 +29,8 @@ export function Home() {
         <p>
           <strong>Les P'tits trajets de Grand-Hallet</strong> est une plateforme
           d'entraide entre parents du village, créée pour organiser et
-          mutualiser les trajets des enfants vers leurs activités extrascolaires
-          et leurs stages.
+          mutualiser les trajets des enfants vers l'école, leurs activités 
+          extrascolaires et leurs stages.
         </p>
 
         <p>

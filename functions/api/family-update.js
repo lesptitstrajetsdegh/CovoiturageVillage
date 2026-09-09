@@ -115,6 +115,21 @@ export async function onRequestPost(context) {
             disabled_at
         `
 
+    if (addressChanged) {
+      await sql`
+        INSERT INTO admin_notifications (
+          type,
+          content,
+          expires_at
+        )
+        VALUES (
+          'admin_account_update_pending',
+          'Une famille a demandé une modification de son adresse.',
+          NOW() + INTERVAL '1 year'
+        )
+      `
+    }
+
     return Response.json({
       family: result[0],
     })

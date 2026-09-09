@@ -18,7 +18,7 @@ Remplacez « (at) » par « @ » pour nous écrire.
 
 ## Rôle et limites de la plateforme
 
-La plateforme facilite la mise en relation entre parents de Grand-Hallet pour organiser les trajets liés aux activités extrascolaires et aux stages des enfants. Elle ne fournit ni service de réservation, ni transport, ni messagerie interne. Chaque trajet et chaque arrangement restent sous la responsabilité des parents concernés.
+La plateforme facilite la mise en relation entre parents de Grand-Hallet pour organiser les trajets liés à l'école, aux activités extrascolaires et aux stages des enfants. Elle ne fournit ni service de réservation, ni transport, ni messagerie interne. Chaque trajet et chaque arrangement restent sous la responsabilité des parents concernés.
 
 Le service est fourni à titre bénévole. Sa disponibilité peut être interrompue, limitée, modifiée ou arrêtée, notamment pour maintenance, sécurité ou évolution du projet. Aucune disponibilité permanente n'est garantie.
 

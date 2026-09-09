@@ -2,9 +2,9 @@
 
 ## 1\. Présentation
 
-Les P'tits trajets de Grand-Hallet est une initiative bénévole locale, créée et gérée par \[Prénom NOM].
+Les P'tits trajets de Grand-Hallet est une initiative bénévole locale, créée et gérée par Céline Degrave.
 
-La plateforme facilite la mise en relation entre parents de Grand-Hallet pour les trajets liés aux activités extrascolaires et aux stages des enfants. Elle n'est ni un service de réservation, ni un service de transport à la demande, ni une messagerie interne.
+La plateforme facilite la mise en relation entre parents de Grand-Hallet pour les trajets liés à l'école, aux activités extrascolaires et aux stages des enfants. Elle n'est ni un service de réservation, ni un service de transport à la demande, ni une messagerie interne.
 
 ## 2\. Accès et compte
 
@@ -14,11 +14,11 @@ L'adresse est demandée afin de vérifier l'appartenance au village. Toute nouve
 
 L'adresse e-mail est le seul identifiant de connexion. L'utilisateur doit vérifier attentivement l'adresse saisie ; elle n'est pas vérifiée automatiquement. Elle ne peut pas être modifiée directement depuis le profil. En cas d'erreur, l'utilisateur contacte humainement le responsable de la plateforme, notamment par téléphone, en direct ou depuis une autre adresse e-mail.
 
-La connexion se fait par e-mail et mot de passe. En cas de mot de passe oublié, aucune récupération automatique par e-mail n'est déclenchée : l'utilisateur contacte humainement le responsable de la plateforme.
+La connexion se fait par e-mail et mot de passe. En cas de mot de passe oublié, l'utilisateur peut utiliser la procédure de récupération proposée lors de la connexion.
 
 ## 3\. Règles relatives aux trajets
 
-La plateforme est limitée à l'entraide entre parents de Grand-Hallet pour les activités extrascolaires et les stages des enfants. Un aller et un retour sont toujours deux trajets distincts à encoder. Les modalités de chaque trajet, y compris les arrangements pratiques, sont réglées directement entre les parents concernés.
+La plateforme est limitée à l'entraide entre parents de Grand-Hallet pour l'école, les activités extrascolaires et les stages des enfants. Un aller et un retour sont toujours deux trajets distincts à encoder. Les modalités de chaque trajet, y compris les arrangements pratiques, sont réglées directement entre les parents concernés.
 
 Les utilisateurs s'engagent à publier des informations exactes, à respecter les arrangements convenus et à prévenir suffisamment tôt en cas d'empêchement. Ils restent seuls responsables de leurs décisions, de leurs déplacements et de la prise en charge des enfants qui leur sont confiés.
 
@@ -30,7 +30,7 @@ La plateforme permet aux utilisateurs validés de consulter les trajets selon so
 
 Le responsable de la plateforme facilite la mise en relation. Il ne participe pas aux arrangements entre parents et ne garantit ni la disponibilité, ni la ponctualité, ni la qualité, ni la sécurité des trajets. Chaque trajet et chaque arrangement restent de la responsabilité des parents concernés.
 
-La plateforme ne collecte pas de données relatives aux enfants, ne gère pas de nombre de places et n'utilise pas de GPS ou de géolocalisation.
+La plateforme limite les informations relatives aux enfants au strict nécessaire pour l'organisation des trajets. Elle ne demande pas de prénom, d'âge ou d'autres informations détaillées concernant les enfants, et ne gère pas de nombre de places ni de GPS ou de géolocalisation.
 
 ## 6\. Modération et suspension
 

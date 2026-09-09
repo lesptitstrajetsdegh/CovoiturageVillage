@@ -45,7 +45,7 @@ export default function Legal() {
 
       <p>
         La plateforme facilite la mise en relation entre parents de Grand-Hallet
-        pour organiser les trajets liés aux activités extrascolaires et aux
+        pour organiser les trajets liés à l'école, aux activités extrascolaires et aux
         stages des enfants. Elle ne fournit ni service de réservation, ni
         transport, ni messagerie interne. Chaque trajet et chaque arrangement
         restent sous la responsabilité des parents concernés.

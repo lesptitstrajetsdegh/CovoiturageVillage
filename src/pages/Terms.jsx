@@ -12,7 +12,7 @@ export default function Terms() {
 
       <p>
         La plateforme facilite la mise en relation entre parents de Grand-Hallet
-        pour les trajets liés aux activités extrascolaires et aux stages des
+        pour les trajets liés à l'école, aux activités extrascolaires et aux stages des
         enfants. Elle n'est ni un service de réservation, ni un service de
         transport à la demande, ni une messagerie interne.
       </p>
@@ -45,15 +45,15 @@ export default function Terms() {
 
       <p>
         La connexion se fait par e-mail et mot de passe. En cas de mot de passe
-        oublié, aucune récupération automatique par e-mail n'est déclenchée :
-        l'utilisateur contacte humainement le responsable de la plateforme.
+        oublié, l'utilisateur peut utiliser la procédure de récupération proposée
+        lors de la connexion.
       </p>
 
       <h2>3. Règles relatives aux trajets</h2>
 
       <p>
         La plateforme est limitée à l'entraide entre parents de Grand-Hallet
-        pour les activités extrascolaires et les stages des enfants. Un aller
+        pour l'école, les activités extrascolaires et les stages des enfants. Un aller
         et un retour sont toujours deux trajets distincts à encoder. Les
         modalités de chaque trajet, y compris les arrangements pratiques, sont
         réglées directement entre les parents concernés.
@@ -88,9 +88,11 @@ export default function Terms() {
       </p>
 
       <p>
-        La plateforme ne collecte pas de données relatives aux enfants, ne
-        gère pas de nombre de places et n'utilise pas de GPS ou de
-        géolocalisation.
+        La plateforme limite les informations relatives aux enfants au strict
+        nécessaire pour l'organisation des trajets. Elle ne demande pas de 
+        prénom, d'âge ou d'autres informations détaillées concernant les enfants,
+        et ne gère pas de nombre de places ni de GPS ou de géolocalisation.
+
       </p>
 
       <h2>6. Modération et suspension</h2>
