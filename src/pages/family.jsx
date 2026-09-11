@@ -281,7 +281,7 @@ async function handleShowTripContact(tripId) {
 
   try {
     const response = await fetch(
-      `/api/family-trip-contact?trip_id=${tripId}`,
+      `/api/family-trips-contact?trip_id=${tripId}`,
     )
 
     const data = await response.json()
