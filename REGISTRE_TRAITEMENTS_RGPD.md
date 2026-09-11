@@ -5,15 +5,15 @@ Adresse e-mail de contact : lesptitstrajetsdegh (at) gmail.com
 
 |Traitement|Base juridique|Finalité|Données|Accès / destinataires|Conservation|
 |-|-|-|-|-|-|
-|Création / gestion du compte|6.1.b|Fournir le service|identité, e-mail, téléphone, données de compte|utilisateur concerné, administration, prestataires nécessaires|compte actif ; désactivé : 1 an|
-|Vérification du village|6.1.f|Vérifier l'appartenance à Grand-Hallet|adresse, identité, statut|administrateur uniquement|selon les règles du compte|
-|Gestion des trajets|6.1.b|Publier/rechercher/gérer les trajets|données relatives aux trajets|utilisateurs validés selon le fonctionnement prévu, administrateur|jusqu'à ouverture de N+2|
-|Affichage des coordonnées|6.1.f|Permettre la prise de contact|téléphone, e-mail|utilisateur validé après action volontaire|selon le compte concerné|
-|Gestion des lieux|6.1.b|Permettre la gestion des lieux nécessaires au service|données du lieu et demandeur|administrateur / utilisateurs selon statut du lieu|selon le statut du lieu|
-|Modification d'adresse|6.1.f|Vérifier que l'utilisateur réside toujours dans le village|ancienne adresse validée, nouvelle adresse, statut|administrateur + utilisateur concerné|donnée provisoire jusqu'à résolution|
+|Création / gestion du compte|6.1.b|Fournir le service|identité, e-mail, téléphone, données de compte|utilisateur concerné, administration, prestataires nécessaires|identité, adresse, e-mail, téléphone, données de compte|
+|Vérification du village|6.1.f|Vérifier l'appartenance à Grand-Hallet|adresse, identité, statut|administrateur uniquement|pendant la durée utile du compte ; compte désactivé : 1 an|
+|Gestion des trajets|6.1.b|Publier/rechercher/gérer les trajets|données relatives aux trajets|utilisateurs validés selon le fonctionnement prévu, administrateur|1 an après leur date d'archivage|
+|Affichage des coordonnées|6.1.f|Permettre la prise de contact|téléphone|utilisateur validé après action volontaire|selon le compte concerné|
+|Gestion des lieux|6.1.f|Permettre la gestion des lieux nécessaires au fonctionnement du service et traiter les demandes de création de nouveaux lieux|données du lieu et demandeur|administrateur / utilisateurs selon statut du lieu|selon le statut du lieu|
+|Modification d'adresse|6.1.f|Vérifier que l'utilisateur réside toujours dans le village|ancienne adresse validée, nouvelle adresse, statut|administrateur + utilisateur concerné|jusqu'à résolution de la vérification ; l'ancienne adresse validée reste conservée comme référence|
 |Journal administratif|6.1.f|Traçabilité et sécurité administrative|identité, action, date, décision|administrateur uniquement|1 an|
 |Notifications internes (rattachées à la gestion du compte / administration)|6.1.b et/ou 6.1.f selon la notification|Informer l'utilisateur ou l'administration dans l'application|destinataire, type, titre, message, date, statut lu/non lu, référence éventuelle|destinataire et administration selon le rôle|1 an à compter de la création|
-|Authentification / fonctionnement technique|6.1.b|Faire fonctionner le service|identifiants et données techniques nécessaires|prestataires nécessaires|selon le prestataire|
+|Authentification / fonctionnement technique|6.1.b|Faire fonctionner le service|adresse e-mail, données d'authentification et données techniques nécessaires|prestataires nécessaires|selon le prestataire|
 |Sécurité / prévention des abus|6.1.f|Sécuriser le service|journaux techniques nécessaires|administration / prestataires nécessaires|selon le besoin et le prestataire|
 
 ## Tests d'intérêt légitime
@@ -46,5 +46,5 @@ Aucun service d'e-mail automatique, SMTP ou transactionnel n'est retenu.
 
 
 
-L'adresse e-mail est l'identifiant du compte et n'est pas vérifiée automatiquement. La récupération automatique du mot de passe par e-mail n'est pas prévue. Le contact humain se fait à « lesptitstrajetsdegh (at) gmail.com ».
+L'adresse e-mail est l'identifiant du compte et n'est pas vérifiée automatiquement. La récupération du mot de passe utilise la procédure intégrée au service, avec l'envoi d'un lien de réinitialisation par e-mail. Le contact humain se fait à « lesptitstrajetsdegh (at) gmail.com ».
 

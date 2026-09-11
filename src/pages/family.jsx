@@ -424,17 +424,7 @@ async function handleShowTripContact(tripId) {
         )
       }
 
-      if (isEditing) {
-        setTrips((current) =>
-          current.map((trip) =>
-            trip.trip_id === editingTripId
-              ? data.trip
-              : trip,
-          ),
-        )
-      } else {
-        setTrips((current) => [...current, data.trip])
-      }
+      await loadTrips()
 
       setTripSaved(true)
       setShowTripForm(false)
