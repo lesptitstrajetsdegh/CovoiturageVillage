@@ -64,7 +64,7 @@ export function Home() {
           <h3>3. Organisez-vous entre familles</h3>
           <p>
             Dans la page <strong>Trajets</strong>, vous consultez les trajets
-            disponibles et prenez contact avec les autres familles pour vous
+            disponibles (via la Recherche de trajets) et prenez contact avec les autres familles pour vous
             organiser.
           </p>
         </div>
