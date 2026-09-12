@@ -487,7 +487,7 @@ async function handleShowTripContact(tripId) {
        className="trip-toggle"
        onClick={() => setShowMyTrips((value) => !value)}
      >
-       {showMyTrips ? '▾' : '▸'}
+       {showMyTrips ? '▴  Masquer mes trajets' : '▾  Afficher mes trajets'}
      </button>
 
      {showMyTrips && (
@@ -766,7 +766,7 @@ Vous pourrez le réactiver plus tard."
 
 <hr />
 
-          <h2>Rechercher un trajet</h2>
+          <h1 className="page-title">Recherche de trajet</h1>
 
           <p className="trip-field">
             <label>

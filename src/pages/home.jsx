@@ -54,16 +54,18 @@ export function Home() {
         <div className="home-step">
           <h3>2. Proposez ou recherchez un trajet</h3>
           <p>
-            Vous indiquez les trajets que vous pouvez assurer, ceux dont vous
-            avez besoin, ou votre intérêt pour une organisation en rotation.
+            Rendez-vous dans la page <strong>Trajets</strong> pour encoder les trajets
+            que vous pouvez assurer ou ceux dont vous avez besoin, et pour rechercher
+            les trajets proposés par les autres familles.
           </p>
         </div>
 
         <div className="home-step">
           <h3>3. Organisez-vous entre familles</h3>
           <p>
-            Vous consultez les trajets disponibles et prenez contact avec les
-            autres familles pour vous organiser.
+            Dans la page <strong>Trajets</strong>, vous consultez les trajets
+            disponibles et prenez contact avec les autres familles pour vous
+            organiser.
           </p>
         </div>
             </section>

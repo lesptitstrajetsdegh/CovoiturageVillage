@@ -130,7 +130,7 @@ export function Navigation() {
           </span>
 
           <Link to="/account">Mon compte</Link>
-          <Link to="/family">Mes trajets</Link>
+          <Link to="/family">Trajets</Link>
 
           <Link to="/notifications">
             🔔 Notifications
