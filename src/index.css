@@ -261,7 +261,7 @@ form p.trip-field .trip-field-title {
   bottom: calc(100% + 8px);
   left: 0;
   width: 360px;
-  max-width: 80vw;
+  max-width: calc(100vw - 40px);
   padding: 12px 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
