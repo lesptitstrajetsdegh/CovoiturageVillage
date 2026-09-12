@@ -109,6 +109,7 @@ export function Auth() {
         )
       }
 
+      await new Promise((resolve) => setTimeout(resolve, 100))
       navigate('/account', { replace: true })
     } catch (error) {
       setSignupError(
