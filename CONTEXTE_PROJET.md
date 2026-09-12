@@ -12,14 +12,14 @@ Slogan :
 « La plateforme d'entraide des parents pour les trajets des enfants »
 
 Objectif :
-Les P'tits trajets de Grand-Hallet est une plateforme créée pour faciliter l'entraide entre les parents du village et les aider à organiser et mutualiser les trajets liés aux activités extrascolaires et aux stages de leurs enfants.
+Les P'tits trajets de Grand-Hallet est une plateforme créée pour faciliter l'entraide entre les parents du village et les aider à organiser et mutualiser les trajets liés à l'école, aux activités extrascolaires et aux stages de leurs enfants.
 
 L'objectif est de simplifier la vie des familles en permettant aux parents de se regrouper lorsque plusieurs d'entre eux effectuent les mêmes trajets, tout en limitant le nombre de déplacements et leur impact environnemental.
 
 Principes :
 - Pas un service de réservation.
 - Pas de covoiturage domicile-travail ni de déplacements personnels.
-- Pas de gestion des enfants.
+- Pas de gestion détaillée des enfants.
 - Pas de géolocalisation.
 - Pas de coût financier pour l'administrateur si possible.
 
@@ -44,8 +44,8 @@ Ces choix décrivent ce que fait le parent pour le trajet concerné ; ils ne dé
 - L'adresse e-mail est le seul identifiant de connexion : aucun champ « identifiant » distinct n'existe.
 - L'utilisateur crée son compte avec une adresse e-mail et un mot de passe. L'adresse e-mail n'est pas vérifiée automatiquement en V1 ; une note lui demande de vérifier attentivement l'adresse saisie.
 - L'utilisateur ne peut pas modifier lui-même son adresse e-mail de connexion. En cas d'erreur, il contacte humainement le responsable de la plateforme par téléphone, en direct ou depuis une autre adresse e-mail ; le numéro de téléphone du profil peut servir à ce contact.
-- Le mot de passe oublié est traité par contact humain avec le responsable de la plateforme. Aucun e-mail automatique, lien magique ou parcours automatique de récupération n'est prévu.
-- La V1 n'envoie aucun e-mail automatique ou transactionnel et n'utilise ni SMTP ni service d'e-mail transactionnel. Les e-mails servent uniquement au contact humain direct.
+- La récupération d'un mot de passe oublié utilise la procédure intégrée au service d'authentification, avec l'envoi d'un lien de réinitialisation par e-mail.
+- La V1 n'envoie pas d'e-mails automatiques pour les notifications ordinaires de la plateforme et n'utilise pas de service d'e-mail transactionnel dédié. Les notifications courantes sont enregistrées directement dans l'espace utilisateur ou administrateur. Les e-mails peuvent également être utilisés pour la récupération du mot de passe et pour le contact humain avec le responsable de la plateforme.
 - Le contact se fait directement à l'adresse publique `lesptitstrajetsdegh (at) gmail.com`. Remplacez « (at) » par « @ » pour nous écrire. Aucun formulaire de contact n'est prévu dans l'application.
 
 ### Inscription d'un nouvel utilisateur
@@ -70,12 +70,12 @@ Ces choix décrivent ce que fait le parent pour le trajet concerné ; ils ne dé
 - Le compte reste pleinement utilisable pendant la vérification administrative de la nouvelle adresse.
 - La nouvelle adresse reste en attente et n'est considérée comme validée qu'après le contrôle de l'administrateur.
 - Si la nouvelle adresse est refusée parce que l'utilisateur n'habite plus dans le village, son compte est suspendu et il n'a plus accès à la plateforme.
-- Si l'adresse est refusée parce qu'elle nécessite une correction ou une précision, l'utilisateur est invité à la modifier et son compte reste utilisable.
+- Si la nouvelle adresse est refusée parce qu'elle nécessite une correction ou une précision, une notification interne en informe l'utilisateur, qui est invité à la modifier ; son compte reste utilisable.
 
 ### Décisions administratives
 
 - Toute validation ou tout refus de compte, de lieu ou d'adresse est tracé dans le journal d'administration.
-- Lorsque cela est pertinent, l'utilisateur concerné est informé de la décision par une indication simple dans l'espace qui le concerne.
+- Lorsque cela est pertinent, l'utilisateur concerné est informé de la décision au moyen d'une notification interne dans son espace.
 - Lorsqu'une décision nécessite d'en informer l'utilisateur, une notification interne lui est créée.
 - Les notifications internes sont le moyen officiel de notification. Elles sont enregistrées en base, associées à leur destinataire, dotées d'un type, d'un titre, d'un message, d'une date et d'un état lu/non lue ; elles peuvent référencer l'élément concerné et sont accessibles depuis la navigation avec un compteur de notifications non lues. Elles sont conservées un an à compter de leur création.
 - Les notifications existent pour les utilisateurs et pour l'administrateur. Elles peuvent signaler une inscription validée ou refusée, une nouvelle adresse validée ou à corriger/préciser, un compte suspendu, une demande de lieu traitée, une nouvelle inscription, une nouvelle demande de lieu ou une nouvelle adresse à vérifier.
@@ -89,7 +89,7 @@ Les P'tits trajets de Grand-Hallet est une initiative bénévole, proposée grat
 
 Pensez à consulter régulièrement vos notifications. »
 
-Ce message est prévu à l'inscription, dans l'aide et, si pertinent, dans l'espace utilisateur.
+Ce message est affiché lors de l'inscription et chaque fois qu'une intervention de l'administrateur est nécessaire, notamment lors d'une demande de modification d'adresse ou de création d'un nouveau lieu.
 
 ## Architecture technique V1 de référence
 
@@ -113,7 +113,7 @@ En utilisant la plateforme, je m'engage à :
 - Respecter les arrangements convenus avec les autres familles et prévenir suffisamment tôt en cas d'empêchement.
 - Prendre soin des enfants qui me sont confiés comme je souhaiterais que les autres parents prennent soin des miens.
 - Respecter la confidentialité des informations auxquelles j'ai accès via la plateforme et ne pas communiquer les coordonnées d'un autre parent à des personnes extérieures.
-- Utiliser la plateforme uniquement dans son objectif : l'entraide entre parents de Grand-Hallet pour les trajets liés aux activités extrascolaires et aux stages des enfants.
+- Utiliser la plateforme uniquement dans son objectif : l'entraide entre parents de Grand-Hallet pour les trajets liés à l'école, aux activités extrascolaires et aux stages des enfants.
 - Régler directement entre parents les modalités de chaque trajet, dans un esprit de confiance et de bonne entente.
 
 La plateforme facilite la mise en relation entre les familles, mais chaque trajet et chaque arrangement restent de la responsabilité des parents concernés.
@@ -137,6 +137,7 @@ Décisions validées :
 - Un compte = un adulte.
 - Validation manuelle des inscriptions.
 - Adresse visible uniquement par l'administrateur.
-- Nom et prénom complets visibles, coordonnées masquées.
-- Année scolaire obligatoire.
+- Nom et prénom des parents visibles, ainsi que le nom de famille des enfants ; les coordonnées de contact restent masquées sauf lorsque l'utilisateur choisit d'afficher son téléphone.
+- Chaque trajet est obligatoirement rattaché à une année scolaire.
+- Chaque période de stage est obligatoirement rattachée à une année scolaire.
 - Les familles organisent ensuite les arrangements directement entre elles.
