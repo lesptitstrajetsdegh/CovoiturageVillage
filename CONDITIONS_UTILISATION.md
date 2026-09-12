@@ -1,10 +1,14 @@
 # Conditions d'utilisation — Les P'tits trajets de Grand-Hallet
 
+
+
 ## 1\. Présentation
 
 Les P'tits trajets de Grand-Hallet est une initiative bénévole locale, créée et gérée par Céline Degrave.
 
 La plateforme facilite la mise en relation entre parents de Grand-Hallet pour les trajets liés à l'école, aux activités extrascolaires et aux stages des enfants. Elle n'est ni un service de réservation, ni un service de transport à la demande, ni une messagerie interne.
+
+## 
 
 ## 2\. Accès et compte
 
@@ -16,15 +20,21 @@ L'adresse e-mail est le seul identifiant de connexion. L'utilisateur doit vérif
 
 La connexion se fait par e-mail et mot de passe. En cas de mot de passe oublié, l'utilisateur peut utiliser la procédure de récupération proposée lors de la connexion.
 
+## 
+
 ## 3\. Règles relatives aux trajets
 
 La plateforme est limitée à l'entraide entre parents de Grand-Hallet pour l'école, les activités extrascolaires et les stages des enfants. Un aller et un retour sont toujours deux trajets distincts à encoder. Les modalités de chaque trajet, y compris les arrangements pratiques, sont réglées directement entre les parents concernés.
 
 Les utilisateurs s'engagent à publier des informations exactes, à respecter les arrangements convenus et à prévenir suffisamment tôt en cas d'empêchement. Ils restent seuls responsables de leurs décisions, de leurs déplacements et de la prise en charge des enfants qui leur sont confiés.
 
+## 
+
 ## 4\. Mise en relation et coordonnées
 
 La plateforme permet aux utilisateurs validés de consulter les trajets selon son fonctionnement prévu. Les coordonnées d'un autre parent ne sont affichées qu'après une action volontaire de l'utilisateur validé. Elles ne sont pas publiées publiquement et ne peuvent pas être communiquées à des tiers.
+
+## 
 
 ## 5\. Rôle et limites de la plateforme
 
@@ -32,13 +42,19 @@ Le responsable de la plateforme facilite la mise en relation. Il ne participe pa
 
 La plateforme limite les informations relatives aux enfants au strict nécessaire pour l'organisation des trajets. Elle ne demande pas de prénom, d'âge ou d'autres informations détaillées concernant les enfants, et ne gère pas de nombre de places ni de GPS ou de géolocalisation.
 
+## 
+
 ## 6\. Modération et suspension
 
 Le responsable de la plateforme peut, par l'intermédiaire du rôle applicatif d'administrateur, modérer un trajet, refuser ou désactiver un lieu, valider, refuser ou suspendre un compte lorsque cela est nécessaire au respect des présentes conditions, des règles de fonctionnement, de la sécurité du service ou de son objet local.
 
+## 
+
 ## 7\. Utilisations interdites
 
 Il est interdit d'utiliser la plateforme à des fins commerciales, pour des trajets domicile-travail ou des déplacements personnels, pour diffuser les coordonnées d'autrui, pour publier des informations trompeuses, pour harceler ou porter atteinte à autrui, ou pour contourner les règles d'accès et de confidentialité.
+
+## 
 
 ## 8\. Contact
 
@@ -46,19 +62,47 @@ Le contact humain direct se fait à l'adresse « lesptitstrajetsdegh (at) gmail.
 
 Les notifications internes sont le moyen officiel de notification. Elles sont accessibles depuis la navigation, comportent un état lu/non lue et sont conservées un an. Les utilisateurs sont invités à les consulter régulièrement ; aucun e-mail automatique n'est envoyé pour les événements courants.
 
+## 
+
 ## 9\. Disponibilité et évolution du service
 
 Le service est fourni à titre bénévole et peut être interrompu, limité, modifié ou arrêté, notamment pour maintenance, sécurité ou évolution du projet. Le responsable de la plateforme s'efforce de préserver un fonctionnement utile, sans garantir une disponibilité permanente.
+
+## 
 
 ## 10\. Données personnelles
 
 Les données personnelles sont traitées conformément à la [Politique de confidentialité](POLITIQUE_CONFIDENTIALITE.md).
 
+## 
+
 ## 11\. Acceptation des conditions
 
 Lors de l'inscription, l'utilisateur doit confirmer : « J'ai lu et j'accepte les Conditions d'utilisation. » Cette acceptation est obligatoire pour créer un compte.
 
+## 
+
 ## 12\. Modification des conditions
 
 Les présentes conditions peuvent être mises à jour pour tenir compte de l'évolution du service, des règles applicables ou des besoins de sécurité. La version en vigueur est celle publiée sur la plateforme. Lorsque la modification le justifie, les utilisateurs en sont informés par un moyen approprié.
+
+
+
+## 13\. Propriété intellectuelle
+
+
+
+Le site \*\*Les P'tits trajets de Grand-Hallet\*\*, sa conception, son organisation, ses textes, contenus éditoriaux, éléments graphiques, fonctionnalités, développements spécifiques et, plus généralement, les éléments originaux créés pour le projet sont protégés par les règles applicables en matière de propriété intellectuelle.
+
+
+
+Ces éléments sont la propriété de \*\*Céline Degrave\*\*, sauf mention contraire ou lorsqu'ils appartiennent à des tiers.
+
+
+
+Toute reproduction, adaptation, modification, diffusion, mise à disposition ou réutilisation, totale ou partielle, de ces éléments à des fins autres que l'utilisation normale du site est interdite sans l'accord préalable de Céline Degrave, sous réserve des exceptions prévues par la loi.
+
+
+
+La présente clause ne porte pas sur les données, informations ou contenus introduits par les utilisateurs eux-mêmes, ni sur les éléments appartenant à des tiers. Elle ne fait pas obstacle aux usages autorisés par la loi.
 

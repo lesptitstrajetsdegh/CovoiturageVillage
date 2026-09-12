@@ -164,6 +164,37 @@ export default function Terms() {
         Lorsque la modification le justifie, les utilisateurs en sont informés
         par un moyen approprié.
       </p>
+
+      <h2>13. Propriété intellectuelle</h2>
+
+      <p>
+        Le site <strong>Les P'tits trajets de Grand-Hallet</strong>, sa
+        conception, son organisation, ses textes, contenus éditoriaux, éléments
+        graphiques, fonctionnalités, développements spécifiques et, plus
+        généralement, les éléments originaux créés pour le projet sont protégés
+        par les règles applicables en matière de propriété intellectuelle.
+      </p>
+
+      <p>
+        Ces éléments sont la propriété de <strong>Céline Degrave</strong>, sauf
+        mention contraire ou lorsqu'ils appartiennent à des tiers.
+      </p>
+
+      <p>
+        Toute reproduction, adaptation, modification, diffusion, mise à
+        disposition ou réutilisation, totale ou partielle, de ces éléments à
+        des fins autres que l'utilisation normale du site est interdite sans
+        l'accord préalable de Céline Degrave, sous réserve des exceptions
+        prévues par la loi.
+      </p>
+
+      <p>
+        La présente clause ne porte pas sur les données, informations ou
+        contenus introduits par les utilisateurs eux-mêmes, ni sur les éléments
+        appartenant à des tiers. Elle ne fait pas obstacle aux usages autorisés
+        par la loi.
+      </p>
+
     </main>
   );
 }

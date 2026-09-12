@@ -258,8 +258,9 @@ export function Auth() {
 
         {!rulesAccepted || !termsAccepted ? (
           <p className="signup-acceptance-hint">
-            Pour créer votre compte, veuillez lire les règles et
-            cocher les deux cases d'acceptation.
+            Pour créer votre compte, veuillez lire les règles et cocher <strong>les DEUX</strong> cases d'acceptation.
+            <br />
+            ℹ️ Pour voir le second bouton, parcourez/lisez les règles de fonctionnement en cliquant sur la petite flèche.
           </p>
         ) : null}
 
