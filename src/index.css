@@ -259,7 +259,7 @@ form p.trip-field .trip-field-title {
   position: absolute;
   z-index: 1000;
   bottom: calc(100% + 8px);
-  left: 0;
+  left: -20px;
   width: 360px;
   max-width: calc(100vw - 40px);
   padding: 12px 14px;
