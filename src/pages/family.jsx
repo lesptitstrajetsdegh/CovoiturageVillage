@@ -896,7 +896,24 @@ Vous pourrez le réactiver plus tard."
 
           <p className="trip-field">
             <label>
-              <span className="trip-field-title">Direction&nbsp;&nbsp;</span>
+              <span className="trip-field-title trip-info-title">
+                Direction&nbsp;&nbsp;
+                <span className="trip-info-icon" tabIndex="0">
+                  ⓘ
+                  <span className="trip-info-tooltip">
+                    <strong>Aller :</strong> trajet du domicile (Grand-Hallet) vers le lieu
+                    de l’activité, du cours ou du stage.
+                    <br /><br />
+                    <strong>Retour :</strong> trajet du lieu de l’activité, du cours ou du
+                    stage vers le domicile (Grand-Hallet).
+                    <br /><br />
+                    <strong>À savoir :</strong> l’aller et le retour sont enregistrés
+                    séparément. Pour une activité, un trajet « Aller » et un trajet « Retour »
+                    correspondent donc à deux trajets distincts.
+                  </span>
+                </span>
+              </span>
+
               <select
                 name="direction"
                 value={searchForm.direction}
@@ -912,7 +929,26 @@ Vous pourrez le réactiver plus tard."
           {searchForm.category === 'activity' && (
             <p className="trip-field">
               <label>
-                <span className="trip-field-title">Type de trajet&nbsp;&nbsp;</span>
+                <span className="trip-field-title">
+                  Type de trajet&nbsp;&nbsp;
+                  <span className="trip-info-icon" tabIndex="0">
+                    ⓘ
+                    <span className="trip-info-tooltip">
+                      <strong>Simple :</strong> le trajet concerne uniquement l’aller ou
+                      uniquement le retour de l’enfant.
+                      <br /><br />
+                      <strong>Aller-retour dans la foulée :</strong> le parent effectue l’aller
+                      et le retour dans la foulée. Par exemple, il conduit son enfant à
+                      l’activité et peut ramener un autre enfant lors de son retour au village,
+                      ou inversement.
+                      <br /><br />
+                      ⚠️ <strong>Attention :</strong> il ne s’agit pas du retour de l’enfant.
+                      Il s’agit du retour du parent vers le village, directement dans la foulée
+                      de l’aller.
+                    </span>
+                  </span>
+                </span>
+
                 <select
                   name="car_trip_type"
                   value={searchForm.car_trip_type}
@@ -925,53 +961,62 @@ Vous pourrez le réactiver plus tard."
                   </option>
                 </select>
               </label>
+              
             </p>
           )}
 
           <p className="trip-field">
-            <span className="trip-field-title">
-              Type de participation
+
+          <span className="trip-field-title trip-info-title">
+            Participation&nbsp;&nbsp;
+            <span className="trip-info-icon" tabIndex="0">
+              ⓘ
+              <span className="trip-info-tooltip">
+                La participation indique si la famille propose de conduire un ou
+                plusieurs enfants, recherche un trajet pour son enfant, ou souhaite
+                organiser une rotation avec d’autres familles.
+              </span>
             </span>
+          </span>
 
-            <label>
-              <input
-                type="checkbox"
-                name="participation_types"
-                value="drive_with_space"
-                checked={searchForm.participation_types.includes(
-                  'drive_with_space',
-                )}
-                onChange={handleSearchCheckboxChange}
-              />
-              Places disponibles
-            </label>
+          <label>
+            <input
+              type="checkbox"
+              name="participation_types"
+              value="drive_with_space"
+              checked={searchForm.participation_types.includes(
+                'drive_with_space',
+              )}
+              onChange={handleSearchCheckboxChange}
+            />
+            Places disponibles
+          </label>
 
-            <label>
-              <input
-                type="checkbox"
-                name="participation_types"
-                value="need_ride"
-                checked={searchForm.participation_types.includes(
-                  'need_ride',
-                )}
-                onChange={handleSearchCheckboxChange}
-              />
-              Besoin d'un trajet
-            </label>
+          <label>
+            <input
+              type="checkbox"
+              name="participation_types"
+              value="need_ride"
+              checked={searchForm.participation_types.includes(
+                'need_ride',
+              )}
+              onChange={handleSearchCheckboxChange}
+            />
+            Besoin d'un trajet
+          </label>
 
-            <label>
-              <input
-                type="checkbox"
-                name="participation_types"
-                value="interested_rotation"
-                checked={searchForm.participation_types.includes(
-                  'interested_rotation',
-                )}
-                onChange={handleSearchCheckboxChange}
-              />
-              Rotation
-            </label>
-          </p>
+          <label>
+            <input
+              type="checkbox"
+              name="participation_types"
+              value="interested_rotation"
+              checked={searchForm.participation_types.includes(
+                'interested_rotation',
+              )}
+              onChange={handleSearchCheckboxChange}
+            />
+            Rotation
+          </label>
 
           <button
             type="button"
@@ -988,6 +1033,8 @@ Vous pourrez le réactiver plus tard."
           >
             Réinitialiser
           </button>
+
+        </p>
 
           {searchTripsError && (
             <p>Erreur : {searchTripsError}</p>
